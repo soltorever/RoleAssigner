@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="content-title">
+                SETTINGS
+            </div>
+            <div class="content-body">
+                <div class="setting">
+                    <div class="setting-title">
+                        ROLE   
+                    </div>
+                    <div class="setting-body">
+                        <table id="role-setting">
+                            <tr>
+                                <td><input type="text" class="roleName" value=""/></td>
+                                <td><input type="number" class="roleNum" min="1" max="99" value="1"/></td>
+                                <td><button onclick="deleteRole(this);">X</button></td>
+                            </tr>
+                        </table>
+                        <button onclick="addRole();">ADD</button>
+                    </div>
+                </div>
+                <div class="setting">
+                    <div class="setting-title">
+                        MEMBER
+                    </div>
+                    <div class="setting-body">
+                    <textarea rows="10" cols="30" id="member-setting"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-title">
+                ASSIGN
+            </div>
+            <div class="content-body">
+                <div class="assign">
+                    <textarea rows="20" cols="60" id="assign-result"></textarea>
+                    <button onclick="doAssign();">ASSIGN</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
